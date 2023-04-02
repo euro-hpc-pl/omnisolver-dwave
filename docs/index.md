@@ -12,7 +12,7 @@ pip install omnisolver-dwave
 
 ## Command line usage
 ```text
-usage: omnisolver pt [-h] [--output OUTPUT] [--vartype {SPIN,BINARY}]
+usage: omnisolver dwave [-h] [--output OUTPUT] [--vartype {SPIN,BINARY}]
                      input
 
 Parallel tempering sampler

@@ -1,0 +1,7 @@
+schema_version: 1
+name: "dwave"
+sampler_class: "omnisolver.dwave.sampler.DWaveSampler"
+description: "D-Wave sampler"
+
+init_args: []
+sample_args: []
