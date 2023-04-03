@@ -11,6 +11,19 @@ To install the plugin run:
 pip install omnisolver-dwave
 ```
 
+## Configuration
+
+Create a file `dwave.conf` in `~/.config/dwave` with the following minimal
+contents
+```ini
+[defaults]
+token = YOUR-TOKEN
+
+[first-available-qpu]
+solver = {"qpu": true}
+```
+
+
 ## Command line usage
 
 ```text

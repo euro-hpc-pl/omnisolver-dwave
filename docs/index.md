@@ -10,6 +10,19 @@ Preferred method of installation is via pip:
 pip install omnisolver-dwave
 ```
 
+## Configuration
+
+Create a file `dwave.conf` in `~/.config/dwave` with the following minimal
+contents
+```ini
+[defaults]
+token = YOUR-TOKEN
+
+[first-available-qpu]
+solver = {"qpu": true}
+```
+
+
 ## Command line usage
 ```text
 usage: omnisolver dwave [-h] [--output OUTPUT] [--vartype {SPIN,BINARY}]
