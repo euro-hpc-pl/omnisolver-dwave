@@ -1,6 +1,6 @@
 schema_version: 1
 name: "dwave"
-sampler_class: "omnisolver.dwave.sampler.DWaveSampler"
+sampler_class: "omnisolver.dwave.sampler.create_sampler"
 description: "D-Wave sampler"
 
 init_args: []

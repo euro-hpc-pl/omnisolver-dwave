@@ -5,8 +5,8 @@ from dwave.system import AutoEmbeddingComposite
 class DWaveSampler(dimod.Sampler):
     """D-Wave annealer sampler."""
 
-    def __init__(self, *args, **config):
-        self.sampler = _DWaveSampler(*args, **config)
+    def __init__(self, sampler):
+        self.sampler = sampler
         self.embedded_sampler = AutoEmbeddingComposite(self.sampler)
 
     def sample(
@@ -28,3 +28,6 @@ class DWaveSampler(dimod.Sampler):
     @property
     def properties(self):
         return self.embedded_sampler.properties
+
+def create_sampler(name: str) -> DWaveSampler:
+    return DWaveSampler(_DWaveSampler(solver=name))
